@@ -17,7 +17,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to task_path(@task)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -31,7 +31,7 @@ class TasksController < ApplicationController
     if @task.update(params_tasks)
       redirect_to task_path(@task)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
