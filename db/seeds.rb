@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts 'creando tareas iniciales'
+
+Task.create(title: 'hola', details: 'no se que es esto', completed: false)
+Task.create(title: 'hola2', details: 'no se que es esto2', completed: false)
+Task.create(title: 'hola3', details: 'no se que es esto3', completed: false)
+Task.create(title: 'hola4', details: 'no se que es esto4', completed: false)
+Task.create(title: 'hola5', details: 'no se que es esto5', completed: false)
